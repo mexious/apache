@@ -9,7 +9,7 @@ sudo tasksel
 # Install PHP, Mysql, Libapache2, dan phpMyAdmin
 sudo apt-get -y install php7.0-fpm
 sudo apt-get install libapache2-mod-php7.0
-sudo apt-get -y install mariadb-server mysql-client 
+sudo apt-get -y install mariadb-server mysql-client mysql-server
 
 
 
@@ -64,6 +64,9 @@ sudo chmod +x /etc/rc.local
 
 # Set Password Mysql
 sudo mysql_secure_installation
+
+# KOnfigturasi .htaccess
+sudo a2enmod rewrite
 
 
 echo "#########################################################################################################################"
